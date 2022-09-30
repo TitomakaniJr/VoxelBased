@@ -1,11 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.Collections;
-using Unity.Jobs;
+﻿using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Profiling;
-using Random = UnityEngine.Random;
 
 namespace VoxelbasedCom
 {

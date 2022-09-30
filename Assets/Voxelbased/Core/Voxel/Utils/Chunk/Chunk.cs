@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Threading;
 using Unity.Mathematics;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Profiling;
 using UnityEngine.Rendering;
 
 namespace VoxelbasedCom
@@ -48,8 +45,6 @@ namespace VoxelbasedCom
         {
             this.isosurface = isosurface;
             meshBuilder = isosurface.GetMeshBuilder(transform.position, chunkSize);
-
-            
 
             BuildChunk();
         }

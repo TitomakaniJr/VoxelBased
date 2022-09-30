@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Part of this code based on Sam Hogan tutorial
+// His original repo: https://github.com/samhogan/Minecraft-Unity3D
+
 using System.Collections.Generic;
 using Unity.Collections;
 using Unity.Jobs;
@@ -23,9 +25,7 @@ namespace VoxelbasedCom.Boxel
                 triangles = new NativeArray<int>(chunkSize * chunkSize * chunkSize * 5 * 3, Allocator.Persistent, NativeArrayOptions.UninitializedMemory),
                 normals = new NativeArray<float3>(chunkSize * chunkSize * chunkSize * 5 * 3, Allocator.Persistent, NativeArrayOptions.UninitializedMemory),
                 counter = new Counter(Allocator.Persistent)
-
             };
-
 
             ScheduleMeshJob();
         }

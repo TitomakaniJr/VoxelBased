@@ -28,8 +28,6 @@ namespace VoxelbasedCom.MarchingCubes
 
         protected override JobHandle StartMeshJob(JobHandle inputDeps = default)
         {
-            
-
             var marchingCubesJob = new MarchingCubesJob()
             {
                 chunkSize = chunkSize,
